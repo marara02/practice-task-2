@@ -1,0 +1,402 @@
+1)
+#include <stdio.h>
+
+int main()
+{
+    printf("Silence is golden");
+
+    return 0;
+}
+2)
+#include<iostream> 
+#include<ctime> 
+using namespace std; 
+int main() 
+{ 
+    time_t tt; 
+    struct tm * ti; 
+    time (&tt);
+    ti = localtime(&tt); 
+  
+    cout << "Current Day, Date and Time is = " 
+         << asctime(ti)<<"Nuraly Marzhan";
+  
+  return 0; 
+} 
+3)
+#include <iostream>
+#include <cmath>
+using namespace std;
+void pascal(int n){
+    for(int line=1;line<=n;line++){
+        int a=0;
+        for(int i=1;i<=((n-line)*0);i++){
+            cout<<" ";
+        }
+        for(int i=1;i<=line;i++){
+            cout<<a<<' ';
+            a=a*0;
+        }
+        cout<<endl;
+    }
+}
+int main ()
+{
+    int n;
+    cin>>n;
+    pascal(n);
+}
+6)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<a+b-c;
+}
+2-variant
+#include <iostream>
+using namespace std;
+int sun (int a,int b,int c){
+    int d;
+    d=a+b-c;
+    return d;
+}
+int main ()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<sun(a,b,c);
+    return 0;
+}
+8)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a,b;
+    cin>>a>>b;
+    int c;
+    c=(a+4*b)*(a-3*b)+a*a;
+    cout<<c;
+    return 0;
+}
+9)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int x;
+    cin>>x;
+    int b;
+    int a=abs(x);
+    b=a+pow(x,5);
+    cout<<b;
+}
+10)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    double x;
+    cin>>x;
+    double a;
+    a=(pow((x+1),2))+3*(x+1);
+    cout<<a;
+    return 0;
+}
+12)
+#include <iostream>
+#include <cmath>
+#define e 2.17
+using namespace std;
+int main ()
+{
+    double x=3.6;
+    double sec=x-2;
+    double st=pow(e,sec);
+    double a=st+abs(sin(x))-((pow(x,4))*cos(1/x));
+    cout<<a<<endl;
+    return 0;
+}
+13)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    double a=0.1;
+    double b=0.2;
+    int x=1;
+    double l=pow((x*x+b),1/5);
+    double c=((b*b)*((sin(x+a))*(sin(x+a))*(sin(x+a)))/x);
+    double d=l-c;
+    cout<<d;
+    return 0;
+}
+14)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a,b;
+    cin>>a>>b;
+    int c;
+    c=a+b;
+    cout<<"Sum of numbers:"<<" "<<c<<endl;
+    int d=0;
+    cout<<"Derivative of a:"<<d<<endl<<"Derivative of b:"<<d;
+    return 0;
+}
+15)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int a;
+    cin>>a;
+    int b;
+    b=a*a;
+    int c;
+    c=a*a*a;
+    cout<<b<<endl<<c;
+    return 0;
+}
+16)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    a=a*2;
+    b=b-3;
+    c=c*c;
+    int d;
+    d=a+b+c;
+    cout<<d;
+    return 0;
+}
+18)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a;
+    cin>>a;
+    int p;
+    p=2*a;
+    int s;
+    s=a*a;
+    cout<<p<<endl<<s;
+    return 0;
+}
+20)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+double t,x;
+cin>>t>>x;
+t=t*60;
+x=x*1000;
+double velocity;
+velocity=x/t;
+cout<<velocity;
+return 0;
+}
+21)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int a,b;
+    cin>>a>>b;
+    int c;
+    c=sqrt(a*a+b*b);
+    cout<<c;
+    int p;
+    int area;
+        p=a+b+c;
+        cout<<p<<endl;
+        area=sqrt((p/2)*(p/2-a)*(p/2-b)*(p/2-c));
+    cout<<area<<endl;
+    return 0;
+}
+22)
+#include <iostream>
+using namespace std;
+int main ()
+{
+double temp;
+cin>>temp;
+temp=(temp*9/5)+32;
+cout<<temp;
+return 0;
+}
+23)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    double x,a;
+    cin>>x>>a;
+    double y,b;
+    cin>>y;
+    b=(a*y)/x;
+    double z,k;
+    cin>>k;
+    z=(k*x)/a;
+    cout<<b<<endl<<z;
+    return 0;
+}
+24)
+25)
+#include <iostream>
+using namespace std;
+int main ()
+{
+int week;
+cout<<"Weeks-";
+cin>>week;
+int month;
+cout<<"Month-";
+cin>>month;
+int day1,day2;
+day1=week*7;
+day2=month*30;
+int sum;
+sum=day1+day2;
+cout<<day1<<endl<<day2<<endl<<sum;
+return 0;
+}
+26)
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c=0;
+    cin >>a>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout <<a<<" "<<c;
+}
+27)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    int n,m,k;
+    n=a;
+    m=b;
+    k=c;
+    a=n+m;
+    b=k-n;
+    c=n+m+k;
+    cout<<a<<" "<<b<<" "<<c;
+    return 0;
+}
+28)
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a,b;
+    double c;
+    cin >> a >> b;
+    c=b/100;
+    for (int i = 0; i<5; i++){
+        a*=(1+c);
+    }
+    cout <<a;
+return 0;
+}
+///2
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a,b,d;
+    double c;
+    cin >> a >> b;
+    c=b/100;
+    d=a*c;
+    for(int i = 0; i<5 ; i++){
+        a+=d;
+    }
+    cout <<a;
+    return 0;
+}
+
+29)
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<b<<" "<<a;
+    return 0;
+}
+30)
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin >>a;
+    a=a*a;
+    a=a*a;
+    cout <<a;
+}
+///2
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin >>a;
+    a=a*a;
+    a=a*a;
+    a=a*a;
+    cout <<a;
+}
+///3
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    b=a*a*a;
+    a=a*a*a;
+    a=a*a;
+    a=a*a;
+    a=a*b;
+    cout<<a;
+}
+31)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int a=647,b=170,c,max=0;
+    c=170/30;
+    max= 647/30;
+    cout << c*max;
+}
+32)
+
+
+
